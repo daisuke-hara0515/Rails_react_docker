@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 
 export const Users = () => {
     return(
-        <>
-          ユーザー画面
-        </>
+        <Fragment>
+          <h1>ユーザー画面</h1>
+        </Fragment>
     )
 }
