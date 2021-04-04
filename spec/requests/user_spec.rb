@@ -15,6 +15,6 @@ RSpec.describe "User", type: :request do
       
       expect(response.status).to eq(200)
       expect(json["users"][0]["name"]).to eq(user.name)
-    end 
+    end
   end
 end
