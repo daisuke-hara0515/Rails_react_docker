@@ -6,7 +6,6 @@ RSpec.describe "Tasks", type: :request do
     let(:user) {User.create(params)}
 
     it "特定のtaskを取得する" do
-      # user = User.create(params)
       task = Task.create(name:'test task',difficulty: 1,user_id: user.id)
 
       get "/api/v1/users/#{user.id}/tasks"
