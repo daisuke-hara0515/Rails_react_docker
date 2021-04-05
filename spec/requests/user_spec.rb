@@ -2,12 +2,10 @@ require 'rails_helper'
 
 RSpec.describe "User", type: :request do
   describe "/api/v1/users #indexメソッドに関するテスト" do
-    before do
-      @params = {name: 'daifuku', email: 'daifuku@example.com', description: 'daifukuだよ！'}
-    end
+    let(:params) {{name: 'daifuku', email: 'daifuku@example.com', description: 'daifukuだよ！'}}
 
     it "ステータスコード200と登録ユーザー情報が返ってくること" do
-      user = User.create(@params)
+      user = User.create(params)
 
       get '/api/v1/users'
 
