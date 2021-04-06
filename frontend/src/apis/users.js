@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { usersindex} from '../ursl/index'
+import { usersindex} from '../urls/index'
 
 export const fetchUsers = () => {
     return axios.get(usersindex)
